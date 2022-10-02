@@ -33,16 +33,13 @@ var pizzas = [{
         nombre: "Hawaina",
         ingredientes: ["salsa de tomate", "muzzarella", "anana"],
         precio: 1500
-    },
-
-
-
-
-
+    }
 
 ]
 
 console.log("-----------------------------------------------------------------------------");
+
+console.log("a)  Las pizzas que tengan un id impar");
 for (let index = 0; index < 6; index++) {
     if (pizzas[index].id % 2 != 0) {
         console.log("La pizza de " + pizzas[index].nombre + " tiene el ID impar " + pizzas[index].id);
@@ -52,7 +49,7 @@ for (let index = 0; index < 6; index++) {
 
 console.log("-----------------------------------------------------------------------------");
 
-
+console.log("b) ¿Hay alguna pizza que valga menos de $600?");
 for (let index = 0; index < 6; index++) {
     if (pizzas[index].precio <= 600) {
         console.log("Las pizzas con un valor mensor a $600 son : " + pizzas[index].nombre + " con el ID " + pizzas[index].id + " ($" + pizzas[index].precio + ")");
@@ -62,6 +59,7 @@ for (let index = 0; index < 6; index++) {
 
 console.log("-----------------------------------------------------------------------------");
 
+console.log("c) El nombre de cada pizza con su respectivo precio.");
 
 for (let index = 0; index < 6; index++) {
 
@@ -71,6 +69,8 @@ for (let index = 0; index < 6; index++) {
 
 console.log("-----------------------------------------------------------------------------");
 
+console.log("d) Todos los ingredientes de cada pizza (En cada iteración imprimir los ingredientes de la pizza actual)");
+
 for (let index = 0; index < 6; index++) {
 
     console.log("La pizza " + pizzas[index].nombre + " tiene los siguientes ingredientes:");
@@ -78,9 +78,7 @@ for (let index = 0; index < 6; index++) {
 for (let index1 = 0; index1 < 3; index1++) {
 
     console.log(pizzas[index].ingredientes[index1]);
-    ;
     
-
 }
 console.log("////////////////////////////////////////////////////")
 }
