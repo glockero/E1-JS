@@ -40,6 +40,7 @@ var pizzas = [{
 console.log("-----------------------------------------------------------------------------");
 
 console.log("a)  Las pizzas que tengan un id impar");
+
 for (let index = 0; index < 6; index++) {
     if (pizzas[index].id % 2 != 0) {
         console.log("La pizza de " + pizzas[index].nombre + " tiene el ID impar " + pizzas[index].id);
@@ -50,9 +51,12 @@ for (let index = 0; index < 6; index++) {
 console.log("-----------------------------------------------------------------------------");
 
 console.log("b) ¿Hay alguna pizza que valga menos de $600?");
+
+console.log("Las pizzas con un valor mensor a $600 son : ")
+
 for (let index = 0; index < 6; index++) {
     if (pizzas[index].precio <= 600) {
-        console.log("Las pizzas con un valor mensor a $600 son : " + pizzas[index].nombre + " con el ID " + pizzas[index].id + " ($" + pizzas[index].precio + ")");
+        console.log(pizzas[index].nombre + " con el ID " + pizzas[index].id + " ($" + pizzas[index].precio + ")");
     }
 
 }
