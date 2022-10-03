@@ -52,7 +52,7 @@ console.log("-------------------------------------------------------------------
 
 console.log("b) ¿Hay alguna pizza que valga menos de $600?");
 
-console.log("Las pizzas con un valor mensor a $600 son : ")
+console.log("Las pizzas con un valor menor a $600 son : ")
 
 for (let index = 0; index < 6; index++) {
     if (pizzas[index].precio <= 600) {
