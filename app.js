@@ -1,4 +1,4 @@
-var pizzas = [{
+const pizzas = [{
         id: 1,
         nombre: "Napolitana",
         ingredientes: ["salsa de tomate", "queso mozzarella", "ajo", "aceite de oliva"],
